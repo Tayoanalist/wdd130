@@ -1,5 +1,5 @@
 @import
-content {
+.content {
 max-width: 1600px
 margins 0 auto;
 }
@@ -8,6 +8,7 @@ margins 0 auto;
 }
 #logo_link {
     padding-top: 5px;
+    padding-left: 100px;
     justify-self: center;
     align-self: center;
 }
