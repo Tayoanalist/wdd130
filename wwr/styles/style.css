@@ -242,3 +242,97 @@ footer .social img {
         margin-top: 25px;
     }
 }
+
+/* FAQ CSS */
+
+.container {
+    max-width: 1000px; /* Adjusted for wider layout */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    text-decoration: none;
+}
+
+.head-content {
+    text-align: center;
+    position: relative;
+    color: white;
+    height: 200px;
+    background: url('images/header-background.jpg');
+    margin-bottom: 20px;
+    flex: 0 0 100%; /* Full width for header */
+}
+
+.head-content h1 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.faq-column {
+    flex: 0 0 48%; /* Adjusted width for columns */
+    margin-bottom: 20px;
+}
+
+.faq-category {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.faq-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* Center the text */
+}
+
+.accordion-item a {
+    display: inline-block; /* Make link inline-block for fitting text */
+    padding: 10px 15px; /* Padding adjusted */
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px 0; /* Margin for spacing between items */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.accordion-item a:hover {
+    background: #2980b9;
+}
+
+.content {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    text-align: left; /* Left-align content text */
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .content {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-column {
+        flex: 0 0 100%; /* Full width for smaller screens */
+    }
+}
