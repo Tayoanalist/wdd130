@@ -246,14 +246,14 @@ footer .social img {
 /* FAQ CSS */
 
 .container {
-    max-width: 1000px; /* Adjusted for wider layout */
+    max-width: 1000px; 
     margin: 0 auto;
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
     text-decoration: none;
 }
 
@@ -261,10 +261,10 @@ footer .social img {
     text-align: center;
     position: relative;
     color: white;
-    height: 200px;
+    height: 300px;
     background: url('images/header-background.jpg');
     margin-bottom: 20px;
-    flex: 0 0 100%; /* Full width for header */
+    flex: 0 0 100%;
 }
 
 .head-content h1 {
@@ -277,7 +277,7 @@ footer .social img {
 }
 
 .faq-column {
-    flex: 0 0 48%; /* Adjusted width for columns */
+    flex: 0 0 48%; 
     margin-bottom: 20px;
 }
 
@@ -296,18 +296,18 @@ footer .social img {
 
 .accordion-item {
     border-bottom: 1px solid #ddd;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 .accordion-item a {
-    display: inline-block; /* Make link inline-block for fitting text */
-    padding: 10px 15px; /* Padding adjusted */
+    display: inline-block; 
+    padding: 10px 15px; 
     background: #3498db;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    margin: 5px 0; /* Margin for spacing between items */
-    border-radius: 4px; /* Rounded corners */
+    margin: 5px 0;
+    border-radius: 4px; 
 }
 
 .accordion-item a:hover {
@@ -319,7 +319,7 @@ footer .social img {
     padding: 15px;
     background: #f9f9f9;
     border-radius: 4px;
-    text-align: left; /* Left-align content text */
+    text-align: left;
 }
 
 input[type="checkbox"] {
@@ -333,6 +333,6 @@ input[type="checkbox"]:checked ~ .content {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .faq-column {
-        flex: 0 0 100%; /* Full width for smaller screens */
+        flex: 0 0 100%; 
     }
 }
