@@ -11,15 +11,17 @@
 
 .header {
     font-family: 'Baskervville SC', Nunito, Rubik;
+    color: #BACEC1;
 }
 .paragraph {
     font-family: lato;
+    color: #1D3124;
 }
 html {
     scroll-behavior: smooth;
 }
 p {
-    color: rgb(85, 85, 85);
+    color:#1D3124;
 }
 
 /*TRANSITION*/
@@ -38,6 +40,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    color: #E59560;
 }
 .nav-links {
     gap: 2rem;
@@ -45,12 +48,12 @@ nav {
     font-size: 1.5rem;
 }
 a{
-    color: black;
+    color: #1D3124;
     text-decoration: none;
     text-decoration: white;
 }
 a:hover {
-    color: gray;
+    color: #E59560;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
@@ -75,29 +78,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 main {
-    padding: 20px;
+    flex: 1;
+    position: relative;
 }
 
 section {
     position: absolute;
-    width: 300px; /* Adjust the width as needed */
+    width: 700px; /* Adjust the width as needed */
     padding: 20px;
 }
 
 /* Top-left corner for "About Me" */
 section.block1 {
-    top: 100px;
+    top: -20px;
     left: 20px;
 }
 
 /* Bottom-right corner for "Career Overview" */
 section.block2 {
-    bottom: -400px;
+    bottom: -30px;
     right: 20px;
 }
 
@@ -113,16 +118,16 @@ section.block2 {
 .top-right-image {
     position: absolute;
     top: 50px; /* Adjust as needed */
-    right: -850px; /* Adjust as needed */
-    width: 400px; /* Adjust as needed */
+    right: -350px; /* Adjust as needed */
+    width: 200px; /* Adjust as needed */
     height: auto;
 }
 
 .bottom-left-image {
     position: absolute;
     bottom: 50px; /* Adjust as needed */
-    left: -800px; /* Adjust as needed */
-    width: 250px; /* Adjust as needed */
+    left: -350px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
     height:auto;
 }
 
@@ -131,21 +136,24 @@ section.block2 {
 footer {
     background-color: #f4f4f4;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin-block-end: auto;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    color: #E59560;
 }
 
 footer p {
     margin: 0;
+    color: #E59560;
 }
 
 .social-icons a {
     margin-right: 10px;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
+.social img {
+    width: 30px;
+    height: 30px;
 }
