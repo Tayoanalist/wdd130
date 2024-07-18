@@ -137,6 +137,62 @@ section.block2 {
      /* Adjust as needed */
 }
 
+/*Professional Journey */
+main {
+    padding: 20px 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Baskervville SC', Nunito, Rubik;
+    color: #1D3124;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Baskervville SC', Nunito, Rubik;
+    color: #1D3124;
+}
+
+p {
+    font-family: Lato, sans-serif;
+    color: #1D3124;
+    line-height: 1.6;
+}
+   
+.resume-button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #E59560;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 400px;
+    text-align: center;
+    right: 40px;
+}
+
+.resume-button:hover {
+    background-color: #1D3124;
+}
+
+.top-left-image {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+
 
 /* Footer styles */
 footer {
