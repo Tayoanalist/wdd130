@@ -4,59 +4,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
 }
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+.header {
+    font-family: 'Baskervville SC', Nunito, Rubik;
+    color: #BACEC1;
+}
+.paragraph {
+    font-family: lato;
+    color: #1D3124;
+}
+html {
+    scroll-behavior: smooth;
+}
+p {
+    color:#1D3124;
 }
 
-header {
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/TRANSITION/
+
+.btn {
+    transition: all 300ms ease;
+}
+
+/NAV/
+
+nav, nav-links {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    color: #E59560;
+    margin: 50px;
+    display: flex;
 }
-
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: #1D3124;
+    text-decoration: none;
+}
+a:hover {
+    color: #E59560;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+/* Logo with Round Frame */
 .logo-frame {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #000; /* Adjust the border color and width as needed */
+    width: 120px; /* Adjust the size as needed */
+    height: 120px; /* Adjust the size as needed */
+    border-radius: 0%;
+    overflow: hidden; /* Ensures the logo image fits within the round frame */
+    border: 0 solid #1D3124; /* Adjust the border color and width as needed */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 .logo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: gray;
+    object-fit: fill; /* Ensures the image covers the entire frame without distortion */
 }
 
 main {
@@ -134,37 +148,25 @@ main {
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+    background-color: #BACEC1;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: inline-flex;
     width: 100%;
-    bottom: 0;
+    position: relative;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 0;
+    color: #E59560;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.social {
-    margin-top: 10px;
-}
-
-.social a {
-    margin: 0 10px;
+.social-icons a {
+    margin-right: 10px;
 }
 
 .social img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
